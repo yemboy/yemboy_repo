@@ -13,8 +13,15 @@ jobs:
           run: echo "Mi primer hola mundo desde un workflow hehco a mano 100%"
 
         - name: list files
-          run: ls -la 
+          run: |
+            ls -la
+            echo "la mejor manera de hacer las cosas es intentando"
+
+        - name: Generate ASCII Artwork
+          run: cowsay -f dragon "Esto esta bien loco we, Esta vez si pasa Actions XD" >> pass.txt
 
         - name: read files
-          run: cat README.md
+          run: |
+            cat README.md
+            cat pass.txt
             
