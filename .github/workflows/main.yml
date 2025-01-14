@@ -1,0 +1,17 @@
+name: Primer workflow hecho a mano
+
+on: push
+
+jobs:
+    primer_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: hola mundo
+          run: echo "Mi primer hola mundo desde un workflow hehco a mano 100%"
+
+        - name: list files
+          run: ls -la 
+        
+        - name: read files
+          run: cat README.md
+            
