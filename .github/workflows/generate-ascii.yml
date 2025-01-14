@@ -9,13 +9,6 @@ jobs:
         - name: add repository file
           uses: actions/checkout@v4
 
-        - name: install cowsay
-          run: sudo apt install cowsay -y 
-
-        - name: Generate ASCII Artwork
-          run: cowsay -f dragon "Esto esta bien loco we, Esta vez si pasa Actions XD" >> pass.txt
-
-        - name: read file
-          run: |
-            cat pass.txt
+        - name: executing shell script
+          run: ./ascii-script.sh
             
